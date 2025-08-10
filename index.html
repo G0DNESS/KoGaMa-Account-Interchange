@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sell accounts with other KoGaMa Users or get one yourself, the sky's the limit!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoGaMa Account Interchange</title>
+    <link href="favicon.png" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header id="main-content">
+    <h1>Welcome to the KoGaMa Account Interchange</h1>
+    <h2>What would you like to do here?</h2>
+    <a class="button-link" href="#accounts">Get an account</a>
+    <a class="button-link" href="#sell-account">Sell an account</a>
+</header>
+
+<section id="accounts">
+    <h1>KoGaMa accounts</h1>
+    <div class="filter-container">
+        <div>
+            <label for="sort-filter">Sort by:</label>
+            <select id="sort-filter">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+            </select>
+        </div>
+        <div>
+            <label for="type-filter">Account Type:</label>
+            <select id="type-filter">
+                <option value="all">All</option>
+                <option value="developer">Developer Made</option>
+                <option value="community">Community Made</option>
+            </select>
+        </div>
+    </div>
+    <hr>
+    <div id="user-stats"></div>
+</section>
+
+<section id="sell-account">
+    <h1>Sell an account</h1>
+    <hr>
+    <form id="sell-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Enter username here" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password here" required>
+
+        <br>
+
+        <button type="submit">Sell account</button>
+
+        <br>
+
+        <br>
+
+        <span id="result-status"></span>
+        <p>By clicking "Sell account", you consent to have your account stored on our servers permanently unless you change the password.</p>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> KoGaMa Account Interchange. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
